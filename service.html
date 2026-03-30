@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>機能・料金一覧 | 黒子のパートナー</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ページ全体の基本設定 */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fcfbf9; 
+            color: #2c2c2c;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+        /* FAQのアコーディオン用の三角マークを消す設定 */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body>
+
+    <header class="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold text-gray-800 tracking-widest text-lg">
+                黒子のパートナー
+            </div>
+            <a href="★ここに佐浦さんのLINE公式アカウントのURLを入れてください★" target="_blank" class="text-xs bg-[#06C755] text-white px-4 py-2 rounded-full font-bold hover:opacity-80 transition shadow-sm">
+                <i class="fab fa-line mr-1 text-sm"></i> 無料相談
+            </a>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-16 md:pt-40 md:pb-24 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-rose-50 rounded-full blur-3xl -z-10 opacity-60"></div>
+        <p class="text-rose-400 font-bold tracking-widest text-xs md:text-sm mb-4 uppercase">Service & Pricing</p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-800 leading-relaxed tracking-wide mb-6">
+            実務サポート機能・料金一覧
+        </h1>
+        <p class="text-sm md:text-base text-gray-500 leading-loose max-w-2xl mx-auto">
+            月額数万円の高額なツールは極力使わず、<br class="hidden md:block">
+            Googleの無料機能を組み合わせて「あなたのお店にピッタリの仕組み」を適正価格で構築します。
+        </p>
+    </section>
+
+    <section class="py-16 md:py-24 px-6 bg-white border-t border-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-3xl font-serif text-gray-800 tracking-wide mb-4">私が黒子として「できること」</h2>
+                <p class="text-sm text-gray-500">店舗運営に必要なIT設定を、あなたに代わってすべて構築します。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-rose-200 transition-colors">
+                    <i class="fa-brands fa-line text-4xl text-[#06C755] mb-4"></i>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">LINE公式アカウント構築</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">お客様が迷わず予約や問い合わせができるよう、見やすくて使いやすい「リッチメニュー（画面下のボタン）」をデザイン・設定します。</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> リッチメニューの画像作成・設定</li>
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> 挨拶メッセージ・応答設定</li>
+                    </ul>
+                </div>
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-rose-200 transition-colors">
+                    <i class="fa-regular fa-calendar-check text-4xl text-rose-400 mb-4"></i>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">自社予約システムの開発</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">高い月額システムを使わず、Googleの無料機能（GAS等）を活用して、24時間自動で受付できるオリジナルのWeb予約画面を作成します。</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> メニューや所要時間の自動計算</li>
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> 休業日や空き枠の自動ブロック設定</li>
+                    </ul>
+                </div>
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-rose-200 transition-colors">
+                    <i class="fa-regular fa-bell text-4xl text-orange-400 mb-4"></i>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">予約通知のLINE自動転送</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">お客様から予約が入った瞬間に、オーナー様のスマホ（LINE）へ即座にお知らせします。メールを見逃す心配がなくなり、確認漏れを防ぎます。</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> 自社予約フォームからの即時通知</li>
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> 他社ポータルの予約メール検知＆通知</li>
+                    </ul>
+                </div>
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-rose-200 transition-colors">
+                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="text-lg font-bold text-gray-800 mb-3">顧客データ管理システム構築</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">紙のカルテを手放し、「誰が・いつ・どのメニューを受けたか」をスプレッドシートや専用データベースに自動で整理・蓄積します。</p>
+                    <ul class="text-xs text-gray-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> スマホからいつでもカルテを確認</li>
+                        <li><i class="fa-solid fa-check text-gray-400 mr-2"></i> 今後のリピーター施策に向けたデータ整理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 px-6 bg-[#f4f2f0]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-rose-400 font-bold tracking-widest text-xs md:text-sm mb-2 uppercase">Pricing Plan</p>
+                <h2 class="text-2xl md:text-3xl font-serif text-gray-800 tracking-wide mb-6">料金プラン</h2>
+                <p class="text-sm text-gray-500">ご予算と今の店舗の状況に合わせて、最適なプランをお選びいただけます。</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+                
+                <div class="bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm flex flex-col mt-4 lg:mt-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1 text-center">システム保守プラン</h3>
+                    <p class="text-xs text-gray-500 text-center mb-6">ミニマム・卒業プラン</p>
+                    
+                    <p class="text-[10px] text-gray-500 text-center mb-6 leading-relaxed bg-gray-50 p-2 rounded-lg">
+                        「まずは予約の自動化だけを低コストで試したい」という方や、【竹】プランで自立した後の「卒業プラン」として移行するためのプランです。
+                    </p>
+
+                    <div class="text-center mb-6 pb-6 border-b border-gray-100">
+                        <div class="mb-3">
+                            <span class="text-xs text-gray-400 font-bold block mb-1">初期費用</span>
+                            <span class="text-2xl font-black text-gray-800">40,000</span><span class="text-sm text-gray-500 font-bold"> 円</span>
+                            <p class="text-[9px] text-gray-400 mt-1">※【竹】プランから移行する場合は不要です</p>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 font-bold block mb-1">月額サポート</span>
+                            <span class="text-2xl font-black text-gray-800">3,000</span><span class="text-sm text-gray-500 font-bold"> 円〜</span>
+                            <p class="text-[9px] text-gray-400 mt-1">（〜5,000円）</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-3 mb-6 flex-grow">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-300 mt-1 mr-3"></i> 予約システムのスピード導入</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-300 mt-1 mr-3"></i> 公式LINE等の環境維持</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-300 mt-1 mr-3"></i> システムエラー等の緊急トラブル対応</li>
+                    </ul>
+
+                    <div class="bg-gray-50 p-4 rounded-xl text-[10px] text-gray-500 leading-relaxed border border-gray-100 mt-auto">
+                        <span class="font-bold text-gray-700 block mb-1">【サポート範囲のお約束】</span>
+                        月次会議や作業代行は一切含みません。安心のインフラ維持に特化した保険的なプランです。
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 md:p-8 border-2 border-rose-300 shadow-xl flex flex-col relative transform lg:-translate-y-4">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-rose-500 text-white text-xs font-bold px-5 py-1.5 rounded-full tracking-widest shadow-md whitespace-nowrap">
+                        一番人気
+                    </div>
+                    <h3 class="text-xl font-bold text-rose-600 mb-1 text-center mt-2">まるっとお任せプラン</h3>
+                    <p class="text-xs text-gray-500 text-center mb-6">自社集客・伴走プラン</p>
+
+                    <p class="text-[10px] text-gray-500 text-center mb-6 leading-relaxed bg-rose-50/50 p-2 rounded-lg">
+                        システムの構築から運用のアドバイスまで、すべてを二人三脚で伴走。自社集客の基盤をしっかり固めたい方に一番選ばれているプランです。
+                    </p>
+
+                    <div class="text-center mb-6 pb-6 border-b border-rose-100">
+                        <div class="mb-3">
+                            <span class="text-xs text-rose-400 font-bold block mb-1">初期費用</span>
+                            <span class="text-3xl font-black text-gray-800">〇〇,〇〇〇</span><span class="text-sm text-gray-500 font-bold"> 円〜</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-rose-400 font-bold block mb-1">月額サポート</span>
+                            <span class="text-3xl font-black text-gray-800">〇〇,〇〇〇</span><span class="text-sm text-gray-500 font-bold"> 円</span>
+                        </div>
+                    </div>
+
+                    <ul class="text-sm text-gray-700 space-y-3 mb-6 font-medium flex-grow">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-500 mt-1 mr-3"></i> LINE構築・自社予約システムの開発</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-500 mt-1 mr-3"></i> 予約時のLINE自動通知設定</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-500 mt-1 mr-3"></i> 将来を見据えた顧客データ管理システム</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-500 mt-1 mr-3"></i> システムの使い方レクチャー</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-rose-500 mt-1 mr-3"></i> 月次ミーティング・IT壁打ちサポート</li>
+                    </ul>
+
+                    <div class="bg-rose-50 p-4 rounded-xl text-[10px] text-rose-800/80 leading-relaxed border border-rose-100 mt-auto">
+                        <span class="font-bold text-rose-700 block mb-1">【黒子からのお約束】</span>
+                        ITが苦手でも心配いりません。あなたが完全に自立して操作できるようになるまで、何度でも丁寧に伴走します。
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm flex flex-col relative mt-4 lg:mt-8">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-500 text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-widest shadow-sm whitespace-nowrap">
+                        プレミアム枠
+                    </div>
+                    <h3 class="text-xl font-bold text-teal-600 mb-1 text-center mt-2">完全お任せ代行パック</h3>
+                    <p class="text-xs text-gray-500 text-center mb-6">フルサポートプラン</p>
+
+                    <p class="text-[10px] text-gray-500 text-center mb-6 leading-relaxed bg-teal-50/50 p-2 rounded-lg">
+                        IT作業をすべて丸投げしたい方や、高額な大手予約サイトのプランを下げて自社集客へ本気で切り替えたい方向けのプランです。
+                    </p>
+
+                    <div class="text-center mb-6 pb-6 border-b border-gray-100">
+                        <div class="mb-3">
+                            <span class="text-xs text-gray-400 font-bold block mb-1">初期費用</span>
+                            <span class="text-2xl font-black text-gray-800">100,000</span><span class="text-sm text-gray-500 font-bold"> 円〜</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-400 font-bold block mb-1">月額サポート</span>
+                            <span class="text-2xl font-black text-gray-800">20,000</span><span class="text-sm text-gray-500 font-bold"> 円〜</span>
+                            <p class="text-[9px] text-gray-400 mt-1">（※ご希望の内容により50,000円〜）</p>
+                        </div>
+                    </div>
+
+                    <ul class="text-sm text-gray-600 space-y-3 mb-6 flex-grow">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-teal-400 mt-1 mr-3"></i> 【竹】プランの内容すべて</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-teal-400 mt-1 mr-3"></i> GoogleやInstagramの投稿代行</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-teal-400 mt-1 mr-3"></i> LINE配信代行・画像作成</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-teal-400 mt-1 mr-3"></i> その他の実務全般をすべてお任せ</li>
+                    </ul>
+
+                    <div class="bg-teal-50 p-4 rounded-xl text-[10px] text-teal-800 leading-relaxed border border-teal-100 mt-auto">
+                        <span class="font-bold block mb-1">【サポート範囲のお約束】</span>
+                        お客様の時間を創出するフルサポートプランですが、クオリティ維持のため<span class="text-teal-600 font-bold">お受けできる店舗数（枠）を厳格に制限</span>させていただいております。
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-[10px] text-gray-400 text-center mt-8 tracking-wider">
+                ※店舗の規模やご希望の機能によりお見積りは変動します。まずは無料相談にて状況をお聞かせください。
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-rose-400 font-bold tracking-widest text-xs md:text-sm mb-2 uppercase">Flow</p>
+                <h2 class="text-2xl md:text-3xl font-serif text-gray-800 tracking-wide">導入までのステップ</h2>
+            </div>
+
+            <div class="relative border-l-2 border-rose-100 ml-4 md:ml-8 space-y-12 pb-4">
+                
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[17px] top-1 w-8 h-8 bg-rose-400 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-md">1</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">LINEで無料相談・ヒアリング</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">まずは公式LINEからお気軽にご連絡ください。「こんなことで困っている」「どんなシステムが合うかわからない」といった軽いご相談からで大丈夫です。現状の課題を丁寧にお伺いします。</p>
+                </div>
+                
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[17px] top-1 w-8 h-8 bg-rose-400 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-md">2</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">ご提案・お見積り</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">ヒアリング内容をもとに、不要なコストを削った最適なシステム構成と、明確なお見積りをご提示します。ご納得いただけるまで無理な営業はいたしません。</p>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[17px] top-1 w-8 h-8 bg-rose-400 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-md">3</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">構築開始 <span class="text-xs font-normal text-gray-400 ml-2">（目安：約◯週間）</span></h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">ご契約後、私が黒子となって裏方のシステム構築・プログラミング作業をすべて代行します。その間、オーナー様は普段通りの接客や施術に集中していただけます。</p>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[17px] top-1 w-8 h-8 bg-rose-400 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-md">4</div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">納品・使い方レクチャー</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">完成したシステムをお渡しし、実際に触っていただきながら操作方法を分かりやすくレクチャーします。ITが苦手な方でも「これなら使える！」と思っていただけるようサポートします。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 px-6 bg-[#fcfbf9] border-t border-gray-100">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-rose-400 font-bold tracking-widest text-xs md:text-sm mb-2 uppercase">FAQ</p>
+                <h2 class="text-2xl md:text-3xl font-serif text-gray-800 tracking-wide">よくあるご質問</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm group">
+                    <summary class="font-bold text-gray-700 cursor-pointer p-5 md:p-6 flex justify-between items-center outline-none">
+                        <span class="flex items-center"><span class="text-rose-400 font-black text-xl mr-3">Q.</span>パソコンが全く使えなくても大丈夫ですか？</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4 flex items-start">
+                        <span class="text-gray-300 font-black text-xl mr-3">A.</span>
+                        <p class="mt-1">はい、全く問題ありません！ITの難しい設定や構築はすべて私が黒子として代行します。納品後は、普段お使いのスマホ（LINEなど）から簡単に操作できるように分かりやすく設計・レクチャーいたしますのでご安心ください。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm group">
+                    <summary class="font-bold text-gray-700 cursor-pointer p-5 md:p-6 flex justify-between items-center outline-none">
+                        <span class="flex items-center"><span class="text-rose-400 font-black text-xl mr-3">Q.</span>今のシステム（ホットペッパー等）と併用できますか？</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4 flex items-start">
+                        <span class="text-gray-300 font-black text-xl mr-3">A.</span>
+                        <p class="mt-1">はい、併用可能です。例えば「新規客はホットペッパー、リピーターは自社LINE予約システム」といった使い分けを推奨しています。ポータルサイトからの予約通知をLINEで受け取る裏技なども組み込めますので、ご相談ください。</p>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm group">
+                    <summary class="font-bold text-gray-700 cursor-pointer p-5 md:p-6 flex justify-between items-center outline-none">
+                        <span class="flex items-center"><span class="text-rose-400 font-black text-xl mr-3">Q.</span>途中で機能を追加することはできますか？</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-50 pt-4 flex items-start">
+                        <span class="text-gray-300 font-black text-xl mr-3">A.</span>
+                        <p class="mt-1">もちろん可能です。最初は「ミニマムプラン」で小さく始めて、お店の成長に合わせて「顧客データ分析」などの機能を追加していくこともできます。完成後も「右腕」として柔軟に機能拡張のご相談に乗ります。</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white border-t border-gray-100 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-serif text-gray-800 tracking-wide mb-6">
+                まずは、あなたの「今の状況」を<br class="md:hidden">聞かせてください
+            </h2>
+            <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-10">
+                どのプランが合うかわからない、といった状態でのご相談も大歓迎です。<br>
+                無理な営業は一切いたしませんので、まずは安心して頼ってくださいね。
+            </p>
+            
+            <a href="★ここに佐浦さんのLINE公式アカウントのURLを入れてください★" target="_blank" class="inline-flex items-center justify-center bg-[#06C755] text-white px-8 md:px-14 py-4 md:py-5 rounded-full shadow-lg hover:translate-y-1 hover:shadow-sm transition-all duration-300 font-bold text-sm md:text-xl tracking-widest group">
+                <i class="fab fa-line text-2xl md:text-3xl mr-3 group-hover:scale-110 transition-transform"></i>
+                LINEで無料相談・お見積りをする
+            </a>
+            <p class="text-[10px] text-gray-400 mt-6 tracking-wider">
+                ※タップするとLINEアプリが開き、そのままメッセージを送れます。
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-[#2c2c2c] py-10 text-center">
+        <div class="font-bold text-gray-400 tracking-widest text-sm mb-4">
+            黒子のパートナー
+        </div>
+        <p class="text-[10px] text-gray-500 tracking-widest uppercase font-light">
+            © Kuroko Partner. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
